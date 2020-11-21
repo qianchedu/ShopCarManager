@@ -20,11 +20,20 @@ namespace Shop.Car.UI.Controllers
         }
 
 
+        /// <summary>
+        /// 添加用户
+        /// </summary>
+        /// <returns></returns>
         public ActionResult AddUser()
         {
             return View();
         }
 
+        /// <summary>
+        /// 订单
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public ActionResult ShowOrder(int id)
         {
             ViewData.Model = OrderInfoBLL.GetAllModelList(o=>o.UId==id);
